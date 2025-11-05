@@ -7,11 +7,11 @@ app = Flask(__name__)
 def home_page():
     return render_template("home.html")
 
-@app.route("/contacts")
+@app.route("/contatos")
 def contacts_page():
     return render_template("contatos.html")
 
-@app.route("/about")
+@app.route("/sobre")
 def about_page():
     return render_template("sobre.html")
 
@@ -19,9 +19,9 @@ def about_page():
 def newpad_page():
     return render_template("newpad.html")
 
-@app.route("/privacy")
+@app.route("/privasidade")
 def privacy_page():
-    return render_template("privacy.html")
+    return render_template("privasidade.html")
 
 @app.route("/search")
 def search_page():
