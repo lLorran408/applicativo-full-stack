@@ -5,7 +5,7 @@
 DROP TABLE IF EXISTS pads;
 DROP TABLE IF EXISTS owners;
 
--- Cria a tabela "owners"
+--Cria a tabela "owners"
 CREATE TABLE owners (
 	-- Chave primária
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
