@@ -26,9 +26,9 @@ def home_page():
         SELECT
             pad_id, pad_created_at, pad_title, pad_owner,
             own_id, own_display_name, own_photo_url,
-            SUBSTR(pad_content, 1, 30) || '...' AS pad_content_preview
+            SUBSTR(pad_content, 1, 40) || '...' AS pad_content_preview
         FROM pads
-        INNER JOIN owners ON pad_owner = own_id 
+        INNER JOIN owners ON pad_owner = own_uid 
             WHERE pad_status = 'ON'
             ORDER BY pad_created_at DESC;
     ''')
