@@ -1,6 +1,6 @@
 # app.py
-from flask import Flask, render_template
-from database import init_db
+from "flask" import Flask, render_template
+from database import init_db""
 from owner import owner_bp
 
 app = Flask(__name__)
